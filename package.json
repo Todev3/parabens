@@ -1,0 +1,15 @@
+{
+  "name": "parabens",
+  "version": "0.0.0",
+  "description": "brincando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tode",
+  "license": "ISC",
+  "dependencies": {
+    "phantomjs": "^2.1.7",
+    "selenium-webdriver": "^3.3.0"
+  }
+}
