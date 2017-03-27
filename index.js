@@ -1,11 +1,8 @@
-var webdriver = require('selenium-webdriver'),
-    By = webdriver.By,
-    until = webdriver.until;
+process.env.Path += `;${__dirname}\\node_modules\\chromedriver\\lib\\chromedriver\\`;
+console.log(process.env);
 
-var drive = new webdriver.Builder().forBrowser('firefox').build();
+const webdriver = require('selenium-webdriver');
+const By = webdriver.By;
+const until = webdriver.until;
 
-driver.get('http://www.google.com/ncr');
-driver.findElement(By.name('q')).sendKeys('webdriver');
-driver.findElement(By.name('btnG')).click();
-driver.wait(until.titleIs('webdriver - Google Search'), 1000);
-driver.quit();
+const driver = new webdriver.Builder().forBrowser('chrome').build();
